@@ -1,6 +1,6 @@
-/*Mystery References
-  *Hard Coded values provide very little context. 
-  *Working with other developers aside, you may even forget why that value is there
+/**Mystery References
+   *Hard Coded values provide very little context. 
+   *Working with other developers aside, you may even forget why that value is there
     *Is it an artifact of debugging? Regardless it should not make it into production.  
     *Simply assigning it to a descriptive variable name, can save a lot of headache.
 */
