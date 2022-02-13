@@ -2,9 +2,9 @@
  * This one is subject to a lot of opinion
  * Used as a tool for developers
  * The truth of the matter is that they can and do appear in client side parts of the app.
- * You may open the developer console of a website and see some console logs appear. 
+ * You may open the developer console of a well-known website and see some console logs appear. 
  * There are some things you can do for a happy middle ground.
- * DO AVOID Leaving 'unprofessional console logs..'
+ * DO AVOID Leaving 'unprofessional console logs..' <insert gif>
  */
 
 /**Can I use comments in production code?

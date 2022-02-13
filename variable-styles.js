@@ -1,4 +1,4 @@
-/**Mystery References
+/**Magic Number, Mystery Number, Unknown reference etc...
    *Hard Coded values provide very little context. 
    *Working with other developers aside, you may even forget why that value is there
     *Is it an artifact of debugging? Regardless it should not make it into production.  
@@ -20,3 +20,5 @@ function betterCountDown(hoursOfSleep) {
     }
   }
 }
+
+
