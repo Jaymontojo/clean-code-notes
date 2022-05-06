@@ -14,3 +14,15 @@
  * Sometimes there are business decisions that dictate why some content exists this is intent
  */
 
+/*
+ #1: You are responsible for the quality of your code
+ #2: Use meaningful names
+ #3: Write code that expresses intent
+ #4: Code should speak for itself whenever possible
+ #5: Leave the code better than you found it
+ #6: Single-responsibility principle 
+ #7: Write Tests 
+ #8: Work in short cycles: incremental and iterative  
+ #9: Independent Architecture 
+ #10: Practice, Practice, Practice 
+ */

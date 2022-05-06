@@ -5,6 +5,8 @@
     *   
  */
 
+
+//Use plural form of nouns when working with lists
  const  petFlixUsers = [
   {name: "Nadia", location: "Japan", isPremiumMember: true},
   {name: "Ronald", location: "New Zealand", isPremiumMember: false},
@@ -18,44 +20,12 @@
   {name: "Hannah", location: "Brazil", isPremiumMember: false},
  ]
 
-
-
-/**get
- * When I am immediately accessing data
- */
-function getUsers() {
-  return petFlixUsers;
-}
-
-
-/**post
- * When I want to add new data
- */
- function postNewUser(name, location, premiumStatus) {
-  return new User(name, location, premiumStatus)
-}
-
-/**set / update
- * When I access a data value and set it to a new value
- */
-function setPremiumStatus(user, premiumStatus) {
-  
-}
-
-/**handle
- * If an event is triggered such as a submit button, this would be the function group
- * that may handle them.
- */
- function handleNewUserSubmit(user, premiumStatus) {
-  
-}
-
 /**classes
  * I try to use classes and constructors to create objects from raw data input.
  * this has the added benefit of being able to initialize different instances of
- * the same object
+ * the same object, each managing their own state.
  */
-class User{
+ class User{
   constructor(name, location, premiumStatus) {
     this.name = name;
     this.location = location;
@@ -70,4 +40,39 @@ const User = {
   location: 'Tokyo, Setagaya-ku',
   isPremiumMember: true
 };
+
+/**get
+ * When I am immediately accessing data
+ */
+function getUsers() {
+  return petFlixUsers;
+};
+
+
+/**post
+ * When I want to add new data
+ */
+ function postNewUser(name, location, premiumStatus) {
+  return new User(name, location, premiumStatus)
+};
+
+/**set / update
+ * When I access a data value and set it to a new value
+ */
+function setPremiumStatus(user, premiumStatus) {
+    user.isPremiumMember = premiumStatus;
+    return "Successfully updated status!"
+};
+
+/**handle
+ * If an event is triggered such as a submit button, this would be the function group
+ * that may handle them.
+ */
+ function handleNewUserSubmit(user, premiumStatus) {
+  return setPremiumStatus(user, premiumStatus);
+};
+
+/*
+  single
+*/
 
