@@ -21,31 +21,21 @@
 
 
 /**get
- * When I are immediately accessing data
+ * When I am immediately accessing data
  */
 function getUsers() {
   return petFlixUsers;
 }
 
-/**classes
- * I try to use classes and constructors to create objects from raw data input
- */
-class User{
-  constructor(name, location, premiumStatus) {
-    this.name = name;
-    this.location = location;
-    this.premiumStatus = premiumStatus
-  };
-}
 
 /**post
  * When I want to add new data
  */
-function postNewUser(name, location, premiumStatus) {
+ function postNewUser(name, location, premiumStatus) {
   return new User(name, location, premiumStatus)
 }
 
-/**set
+/**set / update
  * When I access a data value and set it to a new value
  */
 function setPremiumStatus(user, premiumStatus) {
@@ -59,3 +49,25 @@ function setPremiumStatus(user, premiumStatus) {
  function handleNewUserSubmit(user, premiumStatus) {
   
 }
+
+/**classes
+ * I try to use classes and constructors to create objects from raw data input.
+ * this has the added benefit of being able to initialize different instances of
+ * the same object
+ */
+class User{
+  constructor(name, location, premiumStatus) {
+    this.name = name;
+    this.location = location;
+    this.isPremiumMember = premiumStatus
+  };
+}
+
+//VS
+
+const User = {
+  name: "Jay",
+  location: 'Tokyo, Setagaya-ku',
+  isPremiumMember: true
+};
+

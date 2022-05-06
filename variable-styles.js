@@ -11,7 +11,7 @@ function countDown() {
       return "BEEP BEEP BEEP"
     }
   }
-}
+};
 
 function betterCountDown(hoursOfSleep) {
   for(let i = hoursOfSleep; i <= 0; i--){
@@ -19,6 +19,18 @@ function betterCountDown(hoursOfSleep) {
       return "BEEP BEEP BEEP"
     }
   }
+};
+
+/*
+Boolean Naming
+When we are working with boolean states,
+other variables
+*/
+class CheckingAccount {
+  constructor(memberID, initDeposit) {
+    this.memberID = memberID,
+    this.balance = initDeposit,
+    this.isActive = true;
+    this.created_at = Date.now();
+  }
 }
-
-
