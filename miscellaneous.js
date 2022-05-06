@@ -15,6 +15,7 @@
  */
 
 /*
+https://www.youtube.com/watch?v=UjhX2sVf0eg
  #1: You are responsible for the quality of your code
  #2: Use meaningful names
  #3: Write code that expresses intent

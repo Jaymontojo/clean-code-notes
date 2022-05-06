@@ -33,4 +33,30 @@ class CheckingAccount {
     this.isActive = true;
     this.created_at = Date.now();
   }
+
+  withdraw(amount) {
+    this.isActive ? this.balance - amount : this.balance;
+    return this.balance;
+  }
 }
+
+const JayCheckingAcct = new CheckingAccount(99492834, 0);
+
+/*
+By using booleans named in this way, even if we use more advanced syntax like
+ternery operators reads even better
+*/
+
+//Use plural form of nouns when working with lists
+const  petFlixUsers = [
+  {name: "Nadia", location: "Japan", isPremiumMember: true},
+  {name: "Ronald", location: "New Zealand", isPremiumMember: false},
+  {name: "Tasha", location: "Papua New Guinea", isPremiumMember: true},
+  {name: "Steven", location: "United Arab Emerites", isPremiumMember: true},
+  {name: "JinBae", location: "Mauritius", isPremiumMember: true},
+  {name: "Su", location: "United States", isPremiumMember: false},
+  {name: "Harold", location: "Egypt", isPremiumMember: true},
+  {name: "Anastacia", location: "Lithuania", isPremiumMember: true},
+  {name: "Gregory", location: "United States", isPremiumMember: false},
+  {name: "Hannah", location: "Brazil", isPremiumMember: false},
+ ]

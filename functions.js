@@ -5,21 +5,6 @@
     *   
  */
 
-
-//Use plural form of nouns when working with lists
- const  petFlixUsers = [
-  {name: "Nadia", location: "Japan", isPremiumMember: true},
-  {name: "Ronald", location: "New Zealand", isPremiumMember: false},
-  {name: "Tasha", location: "Papua New Guinea", isPremiumMember: true},
-  {name: "Steven", location: "United Arab Emerites", isPremiumMember: true},
-  {name: "JinBae", location: "Mauritius", isPremiumMember: true},
-  {name: "Su", location: "United States", isPremiumMember: false},
-  {name: "Harold", location: "Egypt", isPremiumMember: true},
-  {name: "Anastacia", location: "Lithuania", isPremiumMember: true},
-  {name: "Gregory", location: "United States", isPremiumMember: false},
-  {name: "Hannah", location: "Brazil", isPremiumMember: false},
- ]
-
 /**classes
  * I try to use classes and constructors to create objects from raw data input.
  * this has the added benefit of being able to initialize different instances of
@@ -73,6 +58,14 @@ function setPremiumStatus(user, premiumStatus) {
 };
 
 /*
-  single
+  single responsibility principle.Try to limit the amount of variables
+  you are passing in. The more variables a function has to juggle, the more possibilities
+  of what may happen and with that more breaking points. Have your function only do
+  1 thing but have it do it really really well.
 */
 
+/*
+  abstract code where you can. Not only do you save some lines of code,
+  but you also create SINGLE SOURCES OF TRUTH. Development teams use architectural design patterns to
+  enforce this. 
+*/
